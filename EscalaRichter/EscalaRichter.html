@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title>Escala Richter</title>
+
+	<link rel="stylesheet" href="../bootstrap-3.3.7/css/bootstrap.css">
+
+	<script src="../jquery/jquery-3.2.1.js"></script>
+
+    <script src="./calculo.js"></script>
+
+</head>
+<body>
+
+	<div class="container">
+
+		<div class="topo">
+
+			<div class="menu">
+
+				<ul class="nav nav-pills">
+					<!-- <li class="active"><a href="#">Principal</a></li> -->
+					<li><a href="../criancas/infantil.html">CRIANÇAS</a></li>
+					<li><a href="../imc/imc.html">IMC</a></li>
+					<li><a href="../escalarichter/escalarichter.html">ESCALA RICHTER</a></li>
+				</ul>
+
+			</div>
+
+			<h1>Calculo Escala Richter</h1>
+			
+		</div>
+
+
+		<div class="imagem">
+
+			<img src="#" width="20%" height="20%" alt=""> 
+			
+		</div>
+
+		<div class="conteudo">
+
+			<form name="escala">
+
+		      	<div class="form-group" id="gAmpli">
+			        <label for="amplitude">Informe a AMPLITUDE</label>
+			        <input type="text" name="amplitude" id="amplitude" class="form-control">
+
+			        <div class="alert alert-danger" style="display: none" id="alertaA">
+			          <p>Amplitude incorreta</p>
+			        </div>
+		      	</div>
+
+		      	<div class="form-group" id="gTempo">
+			        <label for="tempo">Informe o intervalo de TEMPO</label>
+			        <input type="text" name="tempo" id="tempo" class="form-control">
+
+			        <div class="alert alert-danger" style="display: none" id="alertaT">
+			          <p>Intervalo de tempo incorreto</p>
+			        </div>
+		      	</div>
+
+			    <div class="form-group" id="gMag">
+			        <label for="mag">Magnitude:</label>
+			        <input type="text" name="mag" disabled class="form-control">
+			     </div>
+
+			     <div class="form-group" id="gEfeito">
+			        <label for="ef">Efeitos:</label>
+			        <input type="text" name="ef" disabled class="form-control">
+			     </div>
+
+		      	<button type="button" name="calculo" class="btn btn-primary">Calcular</button>
+
+		      	<button type="reset" name="limpar" class="btn btn-warning">Limpar</button>
+
+	      </form>
+
+		</div>
+
+		<div class="rodape">
+			
+		</div>
+	</div>
+
+</body>	

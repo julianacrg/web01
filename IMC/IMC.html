@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="utf-8">
+	<title>IMC</title>
+
+	<link rel="stylesheet" href="../bootstrap-3.3.7/css/bootstrap.css">
+
+	<script src="../jquery/jquery-3.2.1.js"></script>
+
+    <script src="./calculo.js"></script>
+
+</head>
+<body>
+
+	<div class="container">
+
+		<div class="topo">
+
+			<div class="menu">
+
+				<ul class="nav nav-pills">
+					<!-- <li class="active"><a href="#">Principal</a></li> -->
+					<li><a href="../criancas/infantil.html">CRIANÇAS</a></li>
+					<li><a href="../imc/imc.html">IMC</a></li>
+					<li><a href="../escalarichter/escalarichter.html">ESCALA RICHTER</a></li>
+				</ul>
+			</div>
+
+			<h1>Calculo de IMC</h1>
+			
+		</div>
+
+
+		<div class="imagem">
+
+			<img src="#" width="20%" height="20%" alt=""> 
+			
+		</div>
+
+		<div class="conteudo">
+
+			<form name="imc">
+
+		      	<div class="form-group" id="gPeso">
+			        <label for="peso">Informe seu PESO</label>
+			        <input type="text" name="peso" id="peso" class="form-control">
+
+			        <div class="alert alert-danger" style="display: none" id="alertaP">
+			          <p>Peso incorreto</p>
+			        </div>
+		      	</div>
+
+		      	<div class="form-group" id="gAltura">
+			        <label for="altura">Informe sua ALTURA</label>
+			        <input type="text" name="altura" id="altura" class="form-control">
+
+			        <div class="alert alert-danger" style="display: none" id="alertaA">
+			          <p>Altura incorreta</p>
+			        </div>
+		      	</div>
+
+			    <div class="form-group" id="gResposta">
+			        <label for="res">Seu IMC:</label>
+			        <input type="text" name="res" disabled class="form-control">
+			     </div>
+
+			     <div class="form-group" id="gSaudavel">
+			        <label for="sau">Peso saudável:</label>
+			        <input type="text" name="sau" disabled class="form-control">
+			     </div>
+
+		      	<button type="button" name="calculo" class="btn btn-primary">Calcular</button>
+
+		      	<button type="reset" name="limpar" class="btn btn-warning">Limpar</button>
+
+	      </form>
+
+		</div>
+
+		<div class="rodape">
+			
+		</div>
+	</div>
+
+</body>	
